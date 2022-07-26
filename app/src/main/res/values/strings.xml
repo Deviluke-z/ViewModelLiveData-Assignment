@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">BaseProject</string>
+    <string name="tv_app_name">Student List</string>
+    <string name="ed_student_name">Enter student name...</string>
+    <string name="ed_student_age">Enter student age...</string>
+    <string name="btn_register">Register</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_back">Back</string>
+    <!-- TODO: Remove or change this placeholder text -->
+</resources>

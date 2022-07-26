@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_fragment"
+    app:startDestination="@id/studentListScreen">
+
+    <fragment
+        android:id="@+id/studentListScreen"
+        android:name="com.example.baseproject.view.fragment.StudentListScreen"
+        android:label="fragment_student_list_screen"
+        tools:layout="@layout/fragment_student_list_screen" >
+        <action
+            android:id="@+id/action_studentListScreen_to_studentDetailScreen"
+            app:destination="@id/studentDetailScreen" />
+        <action
+            android:id="@+id/action_studentListScreen_to_addStudentScreen"
+            app:destination="@id/addStudentScreen" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/studentDetailScreen"
+        android:name="com.example.baseproject.view.fragment.StudentDetailScreen"
+        android:label="fragment_student_detail_screen"
+        tools:layout="@layout/fragment_student_detail_screen" />
+
+    <fragment
+        android:id="@+id/addStudentScreen"
+        android:name="com.example.baseproject.view.fragment.AddStudentScreen"
+        android:label="fragment_add_student_screen"
+        tools:layout="@layout/fragment_add_student_screen" />
+</navigation>

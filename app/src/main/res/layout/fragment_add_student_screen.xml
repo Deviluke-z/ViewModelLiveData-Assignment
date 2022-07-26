@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="viewmodel"
+            type="com.example.baseproject.viewmodel.StudentViewModel" />
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/sample_margin"
+        android:orientation="vertical"
+        tools:context=".view.fragment.AddStudentScreen">
+
+        <!-- TODO: Update blank fragment layout -->
+        <TextView
+            android:id="@+id/tvAppName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/sample_margin"
+            android:text="@string/tv_app_name"
+            android:textAlignment="center"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edStudentName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/ed_student_name"
+            android:text="@={viewmodel.newStudent.name}" />
+
+        <EditText
+            android:id="@+id/edStudentAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/ed_student_age"
+            android:text="@={viewmodel.newStudent.age}" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/sample_margin"
+                android:layout_weight="1"
+                android:text="@string/btn_register" />
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/sample_margin"
+                android:layout_weight="1"
+                android:text="@string/btn_cancel" />
+        </LinearLayout>
+    </LinearLayout>
+</layout>
+
